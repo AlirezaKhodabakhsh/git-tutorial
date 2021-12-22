@@ -1,3 +1,4 @@
 import torch
 dtype = torch.float
-A=torch.tensor([1,2,3], dtype = dtype)
+device  = torch.device("cuda" if torch.cuda.is_available() else 'cpu')
+A=torch.tensor([1,2,3], dtype = dtype, device=device)
