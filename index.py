@@ -1,2 +1,3 @@
 import torch
-A=torch.tensor([1,2,3])
+dtype = torch.float
+A=torch.tensor([1,2,3], dtype = dtype)
