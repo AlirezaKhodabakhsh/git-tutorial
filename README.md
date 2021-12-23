@@ -14,13 +14,16 @@
 ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 **Content of table**  
-- [Lables](#labels)  
-  - [Static labels](#static-labels)
-  - [Dynamic labels](#dynamic-labels)
-- [Code and Syntax Highlighting](#code-and-syntax-highlighting)
-  - [Python Example](#python-example) 
-  - [MATLAB Example](#matlab-example)
-- [Table](#table)
+* [Lables](#labels)  
+  * [Static labels](#static-labels)
+  * [Dynamic labels](#dynamic-labels)
+* [Code and Syntax Highlighting](#code-and-syntax-highlighting)
+  * [Python Example](#python-example) 
+  * [MATLAB Example](#matlab-example)
+* [Table](#table)
+* [Image/Gif](#image/Gif)
+  * [Image](#image)
+  * [Gif](#gif)
 
 
 ## Labels
@@ -83,3 +86,9 @@ $ pwd
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alirezakhodabakhsh)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alirezakhodabakhsh/)
 [![kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](???)
+
+## Image/Gif
+### Image
+![shariflogo](./images/shariflogo.png)
+### Gif
+![githubgif](./images/github.gif)
