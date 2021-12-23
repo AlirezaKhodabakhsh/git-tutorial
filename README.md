@@ -48,6 +48,7 @@
 def myfunc():
   print("Hello! my name is : {}".format("Alireza"))
 ```
+> output nothing to show
 ### MATLAB Example
 ```matlab
 close all;
@@ -58,6 +59,10 @@ function [A,B] = myfunction(arg1, arg2)
   disp('nothing to show')
 end
 ```
+> Warning: Name is nonexistent or not a directory:
+D:\4th_term\PROJECT\Connectivity Simu\GitHub-Scripts availble\eeglab2021.0 
+Warning: Name is nonexistent or not a directory:
+D:\4th_term\PROJECT\Connectivity Simu\GitHub-Scripts
 ### Git Bash
 ```console
 khali@ASUS-ZenBook MINGW64 /d/GitHub/gittutorial (main)
