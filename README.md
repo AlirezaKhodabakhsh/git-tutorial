@@ -1,14 +1,71 @@
 # Git & GitHub Tutorial
 
 
-- [Linux commands](#)
-  - [Current directory](#)
-  - [Change directory](#)
-    - [Navigate back folder](#)
-    - [Navigate forward folder](#)
-  - [Make new folder](#)
-  - [List current folder contents](#)
-  - [Make new file](#)
+- [Linux commands](#linux-commands)
+  - [Current directory](#current-directory)
+  - [Change directory](#change-directory)
+    - [Navigate back folder](#navigate-back-folder)
+    - [Navigate forward folder](#navigate-forward-folder)
+  - [Make new folder](#make-new-folder)
+  - [List current folder contents](#list-current-folder-contents)
+  - [Make new file](#make-new-file)
+  - [clear-terminal](#clear-terminal)
+
+
+## Linux commands
+
+
+### Current directory
+```bash
+pwd
+```
+> /d/GitHub/
+
+
+### Change directory
+`cd <desired directory>`
+```bash
+cd /d/GitHub/
+```
+
+
+#### Navigate back folder
+`cd ..`
+```bash
+cd ..
+```
+>cd /d/
+
+
+#### Navigate forward folder
+`cd <desired folder name>`
+```bash
+cd GitHub
+```
+>cd /d/GitHub/
+
+### Make new folder
+`mkdir <desired new folder name>`
+```bash
+mkdir gittutorial
+```
+
+### List current folder contents
+`ls`
+
+
+### Make new file
+`touch <file name>`
+```bash
+touch index.py
+```
+
+
+
+
+
+
+
 - [Literature review](#)
   - [Working tree](#)
   - [Commit](#)
