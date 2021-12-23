@@ -1,24 +1,18 @@
+# README TUTORIAL  
 ![](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)
-
+![](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)  
 ![](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-![](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white0)
-![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
 ![](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white0)
-![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![](https://img.shields.io/badge/LaTeX-47A141?style=for-the-badge&logo=LaTeX&logoColor=white)
-
+![](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white0)  
+![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/MATLAB-FF6F00?style=for-the-badge&logo=MATLAB&logoColor=white)  
 ![](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
 ![](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)
-![](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
-  
+![](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)  
+![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-
-
-  
-# README TUTORIAL  
 **Content of table**  
 - [Lables](#labels)  
   - [Static labels](#static-labels)
@@ -64,6 +58,14 @@ function [A,B] = myfunction(arg1, arg2)
   disp('nothing to show')
 end
 ```
+### Git Bash
+```console
+khali@ASUS-ZenBook MINGW64 /d/GitHub/gittutorial (main)
+$ pwd
+/d/GitHub/gittutorial
+
+```
+
 ## Table
 |         | 8:00 - 9:00 A.M | 10:00 - 11:00 A.M  |
 | ------- |:---------------:| ------------------:|
