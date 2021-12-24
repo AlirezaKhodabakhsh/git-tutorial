@@ -4,8 +4,9 @@
 - [Literature review](#literature-review)
 - [Local repository](#local-repository)
 - [Remote repository](#remote-repository)
+- [Git show](#git-show)
 - [Git checkout](#git-checkout)
-- [Undoing](#)
+- [Undoing](#undoing)
 
 
 
@@ -165,6 +166,7 @@ history as being important.
 
 
 # Local repository
+- [Directory](#directory)
 - [Initialize git](#initialize-git)
 - [Display status](#display-status)
 - [Track / Stage](#track--stage)
@@ -174,6 +176,12 @@ history as being important.
 - [Branches](#branches)
   - [Checkout in branch](#checkout-in-branch)
 - [Merging](#merging)
+- [Tagging](#tagging)
+- [Checkout in tagging](#checkout-in-tagging)
+
+## Directory
+
+
 
 ## Initialize git
 Count current directory to git and git folder create in 
@@ -186,11 +194,17 @@ Summery alterations in some frequent phrases:
 ```bash
 git status
 ```
-> **Frequent phrases:**   
-> Tracked file/files   
-> Untracked file/files   
-> Staged file/files   
-> Unstaged file/files  
+> **Frequent phrases:**    
+Tracked file/files   
+Untracked file/files   
+Staged file/files   
+Unstaged file/files
+
+**NOTE:**  
+`git status` show only just alterations in **local repository** and not 
+show alterations in **remote repository**.
+This means that, if anyone had been changed some file(s) of **remote
+repository (GitHub)**, `git status` would not show it to you.
 
 ## Track / Stage
 This command has two performance:
@@ -210,7 +224,8 @@ Save(Commit) your staged/tracked file(files) with message:
 ```bash
 git commit -m "<your message>"
 ```
-**NOTE:** Message is require.
+**NOTE:**  
+Message is require.
 
 ## Display commits
 Show all commits:
@@ -250,23 +265,140 @@ Write about merging
 ```bash
 git merge <branch_name>
 ```
-**NOTE:** Sure that when you merge, your current branch in 
+**NOTE:**  
+Sure that when you merge, your current branch in 
 main branch.
 
+## Tagging
+Write about it 
+```bash
+git tag [options] -m "<tag_message>"
+```
+Options:
+  - `nothing` : Show all tags yoy have.
+  - `-a <tag_name>` : Tag **HEAD** commit (last commit)
+
+**NOTE:**  
+`a` is annotation tag, if you didn't write it, you tag in lightweight tag.
+  - `-a <tag_name> <desired_commit>` :
+  
+### Checkout in tagging
+Switch to desired tag.
+```bash
+git checkout <tag_name>
+```
 
 # Remote repository
+- [Remote](#remote)
+- [Push to remote repo](#push-to-remote-repo)
+- [Pull to local repo](#pull-to-local-repo)
+- [Clone to local repo](#clone-to-local-repo)
+- [Branches](#branches)
 
 
+## Remote
+Write about remote
+
+**NOTE:**  
+you can add multiple remotes and work with them at the same 
+time.
+```bash
+git remote [options]
+```
+Options:
+- `nothing` : Show remotes (GitHub url) that you wish to
+push/pull your local repo commits to it).
+- `add <remote_name> <remote_url>` : Add new remote. This command simply
+means **you are adding the location of your remote repository where 
+    you wish to push/pull your files**.
+(e.g. `git remote add asli "https://github.com/alirezakhodabakhsh/
+hello"`)
+- `rm <remote_name>` : Remove specific remote.
+
+## Push to remote repo
+If you had **new** commit(s) on your **local remote**, you can push these
+to **remote repo**:
+```bash
+git push [options]
+```
+Options:
+- `<remote_name> <branch_name>` :
+- `<remote_name> --delete <branch_name>` : Delete remote branch
+- `<remote_name> <tag_name>` : Push specific tag to your remote repo.
+- 
+
+**NOTE:**  
+In this case, `git status` display:
+> Ahead of origin/master
+
+This means that, you have new commit(s) than when you had pulled
+remote repo.
+**NOTE:**   
+Recommend that **current branch** set on **<branch_name>** that you want 
+to push it (**local repo branch** and **remote repo branch**
+be as same as).
+
+**NOTE:**  
+If **<branch_name>** wasn't there in **remote repository**, **new branch**
+has been created.
+
+## Pull to local repo
+Write about it
+
+### Fetch
+Write about it 
+
+### Merge
+Write about it 
+
+## Clone to local repo
+Clone remote repo:
+```bash
+git clone <remote_url>
+```
+## Branches
+Show local and remote branches.
+```bash
+git branch -a
+```
+**NOTE:**  
+If you pull and up-to-date **local repo**, **new remote branches** 
+wouldn't put in your **local branches**.
+So you should use `git checkout <remote branch>` and use again 
+`git pull` to up-to-date.
 
 
+# Conflict in Git/GitHub
+- [Conflict in local repo](#conflict-in-local-repo)
+- [Conflict in remote repo](#conflict-in-remote-repo)
+## Conflict in local repo
+When you create new branch, you duplicate **master branch** files and
+work on them.
+At this time, if someone (you) change **master branch** file(s) and
+commit changes, after that, you merge **branch** with **master branch**, 
+you **get conflict**. 
+In this time, you must get rid of this conflict. 
+and then merge and commit.
+> **RECOMMEND:**  
+> When you create **new branch**, don't edit **master branch** until 
+> wouldn't merge it.
+
+## Conflict in remote repo
+You clone/pull remote repository and modify it, at same time, someone 
+(you) clone/pull it and modify it **simultaneously** (modified in GitHub).
+Another one (you) push new commits on remote repo and **after that** you 
+push your commits.
+In this time, git get into the conflict.
 
 
+# Git show
 
 
 # Git checkout
 - [Switch branch](#)
 - [Ignore file/files chanes](#)
 - [Switch tag](#)
+
 
 # Undoing
 - [git reset](#)
