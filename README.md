@@ -1,4 +1,19 @@
+***
 # Git & GitHub Tutorial
+***
+
+![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![](https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white)
+![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+![](https://img.shields.io/badge/git-2.33.0-orange.svg)
+
+![](https://img.shields.io/github/commit-activity/y/alirezakhodabakhsh/gittutorial)
+![](https://img.shields.io/github/contributors/alirezakhodabakhsh/gittutorial)
+![](https://img.shields.io/github/license/alirezakhodabakhsh/gittutorial)
+---
+# List of Content:
 - [Linux commands](#linux-commands)
 - [Literature review](#literature-review)
 - [Local repository](#local-repository)
@@ -7,10 +22,8 @@
 - [Git checkout](#git-checkout)
 - [Undoing](#undoing)
 - [Help in git](#help-in-git)
-
-
-
-
+- [Connect with me](#connect-with-me)
+______________________________________________________________
 # Linux commands
 - [Current directory](#current-directory)
 - [Change directory](#change-directory)
@@ -20,7 +33,7 @@
 - [List current folder contents](#list-current-folder-contents)
 - [Make new file](#make-new-file)
 - [Clear terminal](#clear-terminal)
-
+______________________________________________________________
 ## Current directory
 Write about it.
 ```bash
@@ -67,13 +80,7 @@ clear [options]
 ```
 Options:
 - `nothing` : clear terminal display.
-
-
-
-
-
-
-
+______________________________________________________________
 # Literature review
 - [Working tree](#working-tree)
 - [Commit](#commit)
@@ -93,8 +100,7 @@ Options:
 - [Your branch is up to date](#your-branch-is-up-to-date)
 - [Origin/master & master](#originmaster--master)
 - [Tag](#tag)
-
-
+______________________________________________________________
 ## Working tree
 * The working tree, or working directory, consists of files that 
 you are currently working on.  
@@ -172,13 +178,7 @@ this guide showed.
 ## Tag
 * Git has the ability to tag specific points in a repository’s 
 history as being important.
-
-
-
-
-
-
-
+______________________________________________________________ 
 # Local repository
 - [Directory](#directory)
 - [Initialize git](#initialize-git)
@@ -192,7 +192,7 @@ history as being important.
 - [Merging](#merging)
 - [Tagging](#tagging)
 - [Checkout in tagging](#checkout-in-tagging)
-
+______________________________________________________________
 ## Directory
 Write about it.
 
@@ -303,7 +303,7 @@ Switch to desired tag.
 ```bash
 git checkout <tag_name>
 ```
-
+______________________________________________________________
 # Remote repository
 - [Remote](#remote)
 - [Push to remote repo](#push-to-remote-repo)
@@ -314,8 +314,7 @@ git checkout <tag_name>
 - [Differences](#differences)
 - [Clone to local repo](#clone-to-local-repo)
 - [Branches](#branches)
-
-
+______________________________________________________________
 ## Remote
 Write about remote
 
@@ -419,8 +418,7 @@ If you pull and up-to-date **local repo**, **new remote branches**
 wouldn't put in your **local branches**.
 So you should use `git checkout <remote branch>` and use again 
 `git pull` to up-to-date.
-
-
+______________________________________________________________
 # Conflict in Git/GitHub
 - [Conflict in local repo](#conflict-in-local-repo)
 - [Conflict in remote repo](#conflict-in-remote-repo)
@@ -442,8 +440,7 @@ You clone/pull remote repository and modify it, at same time, someone
 Another one (you) push new commits on remote repo and **after that** you 
 push your commits.
 In this time, git get into the conflict.
-
-
+______________________________________________________________
 # Git show
 Write about it.
 ```bash
@@ -452,8 +449,7 @@ git show [options]
 Options:
 - `<commit_key>` : Put in `git log`
 - `<desired_tag>` :
-
-
+______________________________________________________________
 # Git checkout
 Summery all checkout application in git.
 ```bash
@@ -465,15 +461,13 @@ Options:
 file(s).
 - `<tag_name>` : Switch to desired tag.
 - `'<commit_code>'` : Switch to desired commit.
-
+______________________________________________________________
 # Undoing
-
 - [Unstage File](#unstage-file)
 - [???](#???)
 - [.gitignore](#gitignore)
 - [Ignore alterations](#ignore-alterations)
-
-
+______________________________________________________________
 ## Unstage File
 Unstage file(s) already has been staged.
 ```bash
@@ -501,14 +495,16 @@ git checkout <file_name>
 > Utilize this command, when you're working on file, and you 
 > wouldn't reach to valuable commit and want to back to last 
 > commit.
-
-
-
-
-
-
+______________________________________________________________
 # Help in git
 Write about this
 ```bash
 git <command> -help
 ```
+______________________________________________________________
+### Connect with me:
+[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](http://ee.sharif.edu/~alireza.khodabakhsh/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alirezakhodabakhsh)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alirezakhodabakhsh/)
+[![kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](???)
+______________________________________________________________
