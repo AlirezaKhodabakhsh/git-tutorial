@@ -1,5 +1,4 @@
-# Git & GitHub Tutorial  
-**Content of table** 
+# Git & GitHub Tutorial
 - [Linux commands](#linux-commands)
 - [Literature review](#literature-review)
 - [Local repository](#local-repository)
@@ -7,6 +6,7 @@
 - [Git show](#git-show)
 - [Git checkout](#git-checkout)
 - [Undoing](#undoing)
+- [Help in git](#help-in-git)
 
 
 
@@ -20,42 +20,56 @@
 - [List current folder contents](#list-current-folder-contents)
 - [Make new file](#make-new-file)
 - [Clear terminal](#clear-terminal)
+
 ## Current directory
+Write about it.
 ```bash
 pwd
 ```
-> /d/GitHub/
+
 ## Change directory
-`cd <desired directory>`
 ```bash
-cd /d/GitHub/
+cd [options]
 ```
-### Navigate back folder
-`cd ..`
-```bash
-cd ..
-```
->cd /d/
-### Navigate forward folder
-`cd <desired folder name>`
-```bash
-cd GitHub
-```
->cd /d/GitHub/
+Options:
+- `<root>` : 
+- `..` : Navigate back folder.
+- `../..` : Navigate twice back folder.
+- `<folder_name>` : Navigate forward folder.
+
+
 ## Make new folder
-`mkdir <desired new folder name>`
+Write about it.
 ```bash
-mkdir gittutorial
+mkdir [options]
 ```
+Options:
+- `<folder_name>` : Create new folder.
+- 
 ## List current folder contents
-`ls`
-## Make new file
-`touch <file name>`
+Write about it.
 ```bash
-touch index.py
+ls [options]
 ```
+Options:
+- `notthing` : List file(s) in current directory.
+
+## Make new file
+```bash
+touch [options]
+```
+Options:
+- `<file_name>+<format+name>` : Create file with desired format.
+
 ## Clear terminal
-`clear`
+```bash
+clear [options]
+```
+Options:
+- `nothing` : clear terminal display.
+
+
+
 
 
 
@@ -180,8 +194,7 @@ history as being important.
 - [Checkout in tagging](#checkout-in-tagging)
 
 ## Directory
-
-
+Write about it.
 
 ## Initialize git
 Count current directory to git and git folder create in 
@@ -189,11 +202,14 @@ current directory:
 ```bash
 git init
 ```
+
 ## Display status
 Summery alterations in some frequent phrases:
 ```bash
-git status
+git status [options]
 ```
+Options:
+- `--short` : Summery commit shortly
 > **Frequent phrases:**    
 Tracked file/files   
 Untracked file/files   
@@ -214,10 +230,10 @@ This command has two performance:
 git add [options]
 ```
 Options:
-  * `<file name>` :
-  * `<*.py>` :
-  * `<--all>` / `-A` :
-  * `<modules*>` :
+  * `<file_name>` : Stage/Track file(s)
+  * `*.py` : Stage/Track all `.py` file(s)
+  * `--all` / `-A` : Stage/Track all file(s)
+  * `modules*` : Stage/Track all file(s) that name start with `module`
 
 ## Save alterations
 Save(Commit) your staged/tracked file(files) with message:
@@ -292,6 +308,10 @@ git checkout <tag_name>
 - [Remote](#remote)
 - [Push to remote repo](#push-to-remote-repo)
 - [Pull to local repo](#pull-to-local-repo)
+  - [Fetch](#fetch)
+  - [Merge](#merge)
+  - [Pull](#pull)
+- [Differences](#differences)
 - [Clone to local repo](#clone-to-local-repo)
 - [Branches](#branches)
 
@@ -333,6 +353,7 @@ In this case, `git status` display:
 
 This means that, you have new commit(s) than when you had pulled
 remote repo.
+
 **NOTE:**   
 Recommend that **current branch** set on **<branch_name>** that you want 
 to push it (**local repo branch** and **remote repo branch**
@@ -343,14 +364,46 @@ If **<branch_name>** wasn't there in **remote repository**, **new branch**
 has been created.
 
 ## Pull to local repo
-Write about it
+**Pull** is combination of **Fetch** and **Merge**.
 
 ### Fetch
-Write about it 
+Write about it.
+```bash
+git fetch [options]
+```
+Options:
+- `<remote_name>` :
 
 ### Merge
 Write about it 
+```bash
+git merge [options]
+```
+Options:
+- `<remote_name>/<remote_branch_name>` : Merge **remote branch**
+- with your **local branch**.
 
+### Pull
+Write about it.
+```bash
+git pull [options]
+```
+Options:
+- `<remote_name> <remote_branch_name>` : Fetch and Merge 
+respectively from **remote branch name** on **local branch name.**
+
+**NOTE:**  
+Recommended, current local branch as same as repo branch.
+
+## Differences
+Write about it.
+```bash
+git diff [options]
+```
+Options:
+- `<remote_name> <remote_branch_name>` :Show difference master
+branch (remote repo) with master branch (local repo).
+- 
 ## Clone to local repo
 Clone remote repo:
 ```bash
@@ -392,13 +445,70 @@ In this time, git get into the conflict.
 
 
 # Git show
+Write about it.
+```bash
+git show [options]
+```
+Options:
+- `<commit_key>` : Put in `git log`
+- `<desired_tag>` :
 
 
 # Git checkout
-- [Switch branch](#)
-- [Ignore file/files chanes](#)
-- [Switch tag](#)
-
+Summery all checkout application in git.
+```bash
+git checkout [options]
+```
+Options:
+- `<branch_name>` : Switch from current branch to desired branch.
+- `<file_name>` : Ignore all alteration that has been done on
+file(s).
+- `<tag_name>` : Switch to desired tag.
+- `'<commit_code>'` : Switch to desired commit.
 
 # Undoing
-- [git reset](#)
+
+- [Unstage File](#unstage-file)
+- [???](#???)
+- [.gitignore](#gitignore)
+- [Ignore alterations](#ignore-alterations)
+
+
+## Unstage File
+Unstage file(s) already has been staged.
+```bash
+git reset
+```
+
+## ???
+Write about this
+```bash
+git rm [options]
+```
+Options:
+- `<file_name>` : Delete specific file or files from git.
+
+## .gitignore
+Write about this
+
+## Ignore alterations
+Ignore all alteration that has been done on
+file(s).
+```bash
+git checkout <file_name>
+```
+> **RECOMENDED:**  
+> Utilize this command, when you're working on file, and you 
+> wouldn't reach to valuable commit and want to back to last 
+> commit.
+
+
+
+
+
+
+# Help in git
+Write about this
+```bash
+git <command> -help
+```
