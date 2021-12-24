@@ -1,1 +1,2 @@
-*.PyTorch linguist-detectable=true
+*.md linguist-detectable=true
+*.sh linguist-detectable=true
