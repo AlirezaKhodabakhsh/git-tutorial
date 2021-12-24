@@ -1,3 +1,1 @@
-*.md linguist-detectable=true
-*.TensorFlow linguist-detectable=true
 *.PyTorch linguist-detectable=true
