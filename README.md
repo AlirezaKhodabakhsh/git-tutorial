@@ -1,4 +1,3 @@
-
 # Git & GitHub Tutorial  
 **Content of table** 
 - [Linux commands](#linux-commands)
@@ -6,6 +5,11 @@
 - [Local repository](#local-repository)
 - [Remote repository](#remote-repository)
 - [Git checkout](#git-checkout)
+- [Undoing](#)
+
+
+
+
 # Linux commands
 - [Current directory](#current-directory)
 - [Change directory](#change-directory)
@@ -15,55 +19,40 @@
 - [List current folder contents](#list-current-folder-contents)
 - [Make new file](#make-new-file)
 - [Clear terminal](#clear-terminal)
-
-
-
 ## Current directory
 ```bash
 pwd
 ```
 > /d/GitHub/
-
-
 ## Change directory
 `cd <desired directory>`
 ```bash
 cd /d/GitHub/
 ```
-
-
 ### Navigate back folder
 `cd ..`
 ```bash
 cd ..
 ```
 >cd /d/
-
-
 ### Navigate forward folder
 `cd <desired folder name>`
 ```bash
 cd GitHub
 ```
 >cd /d/GitHub/
-
 ## Make new folder
 `mkdir <desired new folder name>`
 ```bash
 mkdir gittutorial
 ```
-
 ## List current folder contents
 `ls`
-
-
 ## Make new file
 `touch <file name>`
 ```bash
 touch index.py
 ```
-
-
 ## Clear terminal
 `clear`
 
@@ -96,7 +85,6 @@ touch index.py
 you are currently working on.  
 * You can think of a working tree as a file system where you can
 view and modify files.
-
 ## Commit
 * save your file/files that put in stage, and after commit, 
 git consider this file/files as a HEAD file. You will be 
@@ -104,13 +92,11 @@ availble call every commit in future.
 * Git considers each commit change point or "save point". 
 It is a point in the project you can go back to if you find 
 a bug, or want to make a change.
-
 ## Stage
 * stage is a place that, 1. untracked files put in stage in 
 order to in commit phase, tracked by git. or 2. 
 modified/deleted/... files that already tracked by git, 
 put in stage in order to save changed in commit phase.
-
 ## Tracked/Untracked file
 * you have NEW file/files that if contents modified, git can't 
 sense alterations.
@@ -124,26 +110,21 @@ compiler.
 local repository.
 * Untracked - files that are in your working directory, but 
 not added to the local repository.
-
 ## Modifed file
 * git always check tracked file/files,when file/files contents has 
 been changed, git label it/these to modified file.
-
 ## Nothing added to commit
 * no file/files are in stage to commit.
-
 ## Changes not staged for commit
 * your tracked file/files has been modified, and NOT yet put in 
 stage to commit.
-
 ## HEAD
 * HEAD is last/final commit (last saved alterations).
-
 ## Local
 * local meaning is in your personal computer.
 * EX:  
-local commit : a written commit that has been write in your computer and has not yet push in remote repository.
-	
+local commit : a written commit that has been write in your computer and has
+not yet push in remote repository.
 ## Origin
 * origin" is the name of the remote repository where you want to 
 publish you commits. By convention, the default remote repository 
@@ -162,7 +143,6 @@ when you use command clone in git, git create new folder with
 name as same as name of remote repo in github and copy and 
 download everything and put it them on this folder.
 ## Ahead of origin/master
-
 ## Behind of origin/master
 * when you fetch remote repo on your local repo, this guide say 
 you, remote repo have new commits so that you have not these 
@@ -180,28 +160,98 @@ history as being important.
 
 
 
+
+
+
+
 # Local repository
-- [Create directory](#)
-- [Initiale git](#)
-- [Git status](#)
-  - [Tracked/Untrackted files](#)
-  - [Stage/Unstage files](#) 
-- [Git add](#)
-  - [git add --all](#)
-- [Git commit](#)
-- [Git log](#)
-- [Git diff](#)
-- [Git reset](#)
-- [Git branch](#)
-  - [Status branch](#)
-  - [Switch branch](#)
-  - [Delete branch](#)
-- [Git merge](#)
+- [Initialize git](#initialize-git)
+- [Display status](#display-status)
+- [Track / Stage](#track--stage)
+- [Save alterations](#save-alterations)
+- [Display commits](#display-commits)
+- [Display differences](#display-differences)
+- [Branches](#branches)
+  - [Checkout in branch](#checkout-in-branch)
+- [Merging](#merging)
 
+## Initialize git
+Count current directory to git and git folder create in 
+current directory:
+```bash
+git init
+```
+## Display status
+Summery alterations in some frequent phrases:
+```bash
+git status
+```
+> **Frequent phrases:**   
+> Tracked file/files   
+> Untracked file/files   
+> Staged file/files   
+> Unstaged file/files  
 
+## Track / Stage
+This command has two performance:
+  * Track new file/files that not yet added to git.
+  * Stage file/files that has been tracked by git.
+```bash
+git add [options]
+```
+Options:
+  * `<file name>` :
+  * `<*.py>` :
+  * `<--all>` / `-A` :
+  * `<modules*>` :
 
+## Save alterations
+Save(Commit) your staged/tracked file(files) with message:
+```bash
+git commit -m "<your message>"
+```
+**NOTE:** Message is require.
 
+## Display commits
+Show all commits:
+```bash
+git log
+```
+**NOTE:** If list of commit is long, you can press `q` to exit.
 
+## Display differences
+Write about it.
+```bash
+git diff [options]
+```
+Options:
+  * `<nothing>`:
+  * `HEAD`:
+  * `--staged`:
+  
+## Branches
+Write about branches.
+```bash
+git branch [options]
+```
+Options:
+  * `nothing`: Show current branch
+  * `<branch_name>`: Create new branch
+  * `-d <branch_name>`: Delete branch
+
+### Checkout in branch
+Write about checkout
+```bash
+git checkout <branch_name>
+```
+
+## Merging
+Write about merging
+```bash
+git merge <branch_name>
+```
+**NOTE:** Sure that when you merge, your current branch in 
+main branch.
 
 
 # Remote repository
@@ -217,3 +267,6 @@ history as being important.
 - [Switch branch](#)
 - [Ignore file/files chanes](#)
 - [Switch tag](#)
+
+# Undoing
+- [git reset](#)
