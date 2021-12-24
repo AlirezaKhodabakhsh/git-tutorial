@@ -1,2 +1,4 @@
 *.md linguist-detectable=true
-*.sh linguist-detectable=true
+*.py linguist-detectable=true
+*.ipynb linguist-detectable=true
+
