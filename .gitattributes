@@ -1,1 +1,5 @@
 *.md linguist-detectable=true
+*.md linguist-documentation=false
+
+*.PyTorch linguist-detectable=true
+*.PyTorch linguist-documentation=false
