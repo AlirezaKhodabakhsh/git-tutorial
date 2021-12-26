@@ -8,7 +8,7 @@
 ![](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 ![](https://img.shields.io/badge/git-2.33.0-orange.svg)
-![](https://visitor-badge.glitch.me/badge?page_id=alirezakhodabakhsh.git-tutorial&left_color=red&right_color=green)
+![visitors](https://visitor-badge.deta.dev/badge?page_id=alirezakhodabakhsh.git-tutorial&left_color=red&right_color=green)
 
 ![](https://img.shields.io/github/commit-activity/y/alirezakhodabakhsh/gittutorial)
 ![](https://img.shields.io/github/contributors/alirezakhodabakhsh/gittutorial)
